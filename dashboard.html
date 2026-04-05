@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Bell Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container gray">
+    <div class="dashboard-card">
+      <h2>Exam Bell Dashboard</h2>
+
+      <p id="currentTime">Current Time: --:--</p>
+
+      <hr>
+
+      <h3>Set Bell Time</h3>
+      <div class="time-input">
+        <input type="number" id="hour" min="0" max="23" placeholder="10">
+        <span>:</span>
+        <input type="number" id="minute" min="0" max="59" placeholder="00">
+      </div>
+
+      <button class="green" onclick="setBellTime()">Set Bell Time</button>
+
+      <hr>
+       <button class="red" onclick="ringBell()">Ring Bell Now</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
